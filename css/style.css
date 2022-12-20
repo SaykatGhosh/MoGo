@@ -1,0 +1,604 @@
+/* Google Fonts LinkUp */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+/* --------- Start Defult property  --------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul, ol{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+    line-height: 0.8;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* --------- End Defult property  --------- */
+
+
+/* ---------- Navbar part section start ------- */
+#navbar{
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    padding: 30px 0;
+}
+.nav_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_menu ul{
+    display: flex;
+    column-gap: 55px;  
+}
+.nav_menu ul li a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700         ;
+    color: #fff;
+    transition: all linear 0.3s;
+    text-transform: uppercase;
+    position: relative;
+}
+.nav_menu ul li a:hover{
+    color: #fce38a;
+}
+.nav_menu ul li a::after{
+    position: absolute;
+    content: "";
+    bottom: -12px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #fce38a;
+    transition: all linear 0.3s;
+}
+.nav_menu ul li a:hover::after{
+    width: 100%;
+}
+/* ---------- Banner part section Start ------- */
+#banner{
+    padding: 235px 0 230px 0;
+    background: linear-gradient(rgba(255, 0, 0, 0.4), rgba(238, 208, 137, 0.714)), url(../images/banner.jpg);
+}
+.banner_content{
+    text-align: center;
+}
+.banner_text{
+    position: relative;
+}
+.banner_text h2{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 72px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 64px;
+}
+.banner_text h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 150px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 140px;
+}
+.divider::after{
+     position: absolute;
+     content: "";
+     bottom: -73px; 
+     left: 50%;
+     width: 60px;
+     height: 3px;
+     transform: translateX(-50%);
+     background-color: #fff;
+}
+.btn{
+    margin-top: 140px;
+}
+.btn a{
+    border: 3px solid #fff;
+    padding: 12px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* ---------- Banner part section End ------- */
+/* Common Class of divider */
+
+.cmn-divider{
+    position: relative;
+}
+.cmn-divider::after{
+    position: absolute;
+    content: "";
+    bottom: -40px;
+    left: 50%;
+    width: 60px;
+    height: 3px;
+    transform: translateX(-50%);
+    background-color: #f38181;
+}
+/* ---------- About Us part section Start ------- */
+#about_main{
+    padding: 90px 0 110px 0;
+}
+.cmn_content{
+    text-align: center;
+}
+.cmn_content h3{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+    padding-bottom: 24px;
+}
+.cmn_content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+}
+.cmn_content p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999999;
+    padding: 91px 0 104px 0;
+}
+.about_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+ 
+.about_item{
+    width: 380px;
+    height: 250px;
+    overflow: hidden;
+    background-color: red;
+    position: relative;
+}
+.about_item img{
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+}
+.about_item .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.4), rgba(238, 208, 137, 0.714));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all linear 0.3s;
+    cursor: pointer;
+}
+.overlay_text{
+    text-align: center;
+}
+.overlay_text i{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 11px;
+}
+.overlay_text h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+.overlay:hover{
+    opacity: 1;
+}
+
+/* ---------- About Us part section End ------- */
+
+
+/* ---------- Counting part section Start ------- */
+#counting{
+     padding: 89px 0;
+     background-color: #95e1d3;
+}
+.count_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    column-gap: 120px;
+}
+.count{
+    text-align: center;
+}
+.count h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.count h4{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+/* ---------- Counting part section End ------- */
+/* ---------- Service part section Star ------- */
+.service_main{
+    padding: 110px 0 100px 0;
+}
+.service_content{
+    margin-bottom:112px;
+}
+.service_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+.service_item1{
+    width: 333px; 
+    padding-bottom: 102px;
+}
+.service_item2{
+    width: 330px;
+    margin-left: 68px; 
+    padding-bottom: 102px;
+}
+.service_item3{
+    width: 342px;
+    margin-left: 79px;
+    padding-bottom: 102px;
+}
+.service_item4{
+    width: 295px;
+}
+.service_item5{
+    width: 299px;
+    margin-left: 113px;
+}
+.service_item6{
+    width: 300px;
+    margin-left: 113px;
+
+}
+.cmn_item_wrapper{
+    display: flex;
+    column-gap: 29px;
+}
+.cmn_item_wrapper i{
+    font-size: 32px;
+    color:#95e1d3; 
+}
+.cmn_item_wrapper .cmn_item_content h3{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.cmn_item_wrapper .cmn_item_content p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;    
+    font-size: 15px;
+    color: #999;
+}
+/* ---------- Service part section End ------- */
+
+/* ---------- Comment part section start ------- */
+#comment{
+    background-color: #f8f8f8;
+    padding: 82px 0 69px 0;
+}
+.comment_wrapper{
+    width: 100%;
+    display: flex;
+    column-gap: 62px;
+}
+.comment_wrapper .fa-message{
+    border: 3px solid #95e1d3;
+    padding: 40px;
+    font-size: 60px;
+    color: #95e1d3;
+    width: 150px;
+}
+.comment_content{
+    width: 768px;
+}
+.comment_content p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 italic;
+    font-size: 24px;
+    color: #999999;
+    margin-bottom: 28px;
+}
+.comment_content h2{
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+    text-transform: capitalize;
+    margin-left: 70px;
+    position: relative;
+}
+.comment_content h2::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: -69px;
+    width: 60px;
+    height: 3px;
+    transform: translateX(-50%, -50%);
+    background-color: #f38181;
+}
+.fa-chevron-left{
+    margin-top: 64px;
+    font-size: 23px;
+    color: #cccccc;
+}
+.fa-chevron-right{
+    margin-top: 61px;
+    font-size: 23px;
+    color: #cccccc;
+}
+/* ---------- comment section End ------- */
+/* ---------- Team section Start ------- */
+#team{
+    padding: 63px 0 100px 0;
+}
+.team_wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.team_item{
+    width: 380px;
+    height: 469px;
+    position: relative;
+    
+}
+.team_item img{
+    width: 100%;
+    height: 100%;
+}
+.team_content{
+    text-align: center;
+}
+.team_item h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    text-transform: uppercase;
+    padding: 41px 0 16px 0;
+}
+.team_item h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+.team_item .social_overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(239, 141, 139, 0.502),rgba(228, 196, 127, 0.527)); 
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all linear 0.3s;
+}
+.icon_wrapper{
+    display: flex;  
+    column-gap: 1px;
+}
+.icon_wrapper a i{
+    padding: 15px 20px;
+    background-color: #fce38a;
+    transition: all linear 0.3s;
+    color: #f38181;
+}
+.icon_wrapper i:hover{
+    background-color: #f38181;
+    color: #fff;
+}
+.social_overlay:hover{
+    opacity: 1;
+}
+/* ----------  Team section End ------- */
+/* ------ Portfolio section start ------ */
+#portfolio{
+    padding: 100px 0 100px 0;
+}
+.portfolio_img{
+    display: flex;
+}
+.part{
+    line-height: 0;
+}
+/* ------ Portfolio section End ------ */
+/* ------ footer section start ------ */
+#footer{
+    padding: 75px 0 24px 0;
+    background-color: #f8f8f8;
+}
+.footer_main{
+    display: flex;
+}
+.footer_info{
+    width: 481px;
+}
+.footer_info img{
+    color: #999999;
+}
+.footer_info p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #999999;
+    line-height: 24px;
+    padding: 42px 0 50px 0;
+}
+.footer_info h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 19px;
+    border-bottom: 1px solid #999999 ;
+}
+.social_icon_flw {
+    padding-top: 19px;
+    display: flex;
+    column-gap: 23px;
+}
+.social_icon_flw h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300 ;
+    font-size: 15px;
+}
+.social_icon_flw a i{
+    color: #95e1d3;
+}
+.email_input{
+    padding-top: 38px;
+    
+}
+.text_input{
+   border: none;
+    padding: 17px 34px;
+}
+.sub_btn{
+    padding: 15px 34px;
+    background-color: #95e1d3;
+    color: #fff;
+}
+.email_input a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.blogs{
+    width: 333px;
+    margin-left: 28px;
+}
+.blog_main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    
+}
+.blog_item{
+    width: 370px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.blog_img{
+    width: 120px;
+    height: 80px;
+    overflow: hidden;
+}
+.blog_img img{
+    height: 100%;
+    width: 100%;
+}
+.blog_text{
+    width: 230px;
+}
+.blog_text h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 14px;
+}
+.blog_text span{
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    color: #999999;
+}
+.blog_main{
+    display: flex;
+    column-gap: 30px;
+}
+.footer_title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
+.insta_wrapper{
+    width: 268px;
+}
+
+.insta_item{
+    width: 88px;
+    height: 88px;
+    overflow: hidden;
+}
+.insta_main{
+    display: flex;
+    gap: 2px;
+    flex-wrap: wrap;
+}
+.insta_item img{
+    width: 100%;
+    height: 100%;
+}
+.insta_wrapper p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    padding-top: 20px;
+    color: #999999;
+}
+.line{
+    padding-top: 69px;
+    border-bottom: 1px solid #999999;
+}
+.copyright{
+    padding-top: 24px;
+    text-align: center;
+}
+.copyright h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+.copyright span{
+    color: #f38181;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+/* ------ footer section End ------ */
+
+
+
+
+
+/* 
+font-family: 'Kaushan Script', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
