@@ -353,14 +353,17 @@ h1,h2,h3,h4,h5,h6{
 }
 .comment_arrows{
     position: relative;
+    display: flex;
 }
-.comment_arrows i::after{
+.left_arrows{
     position: absolute;
-    content: "";
+    top: 50px;
+    left: 0;
+}
+.right_arrows{
+   position: absolute;
+    top: 50px;
     right: 0;
-    top: -50%;
-    transform: translateX(-50%);
-
 }
 .right_arrows{
     font-size: 23px;
@@ -587,10 +590,11 @@ h1,h2,h3,h4,h5,h6{
     width: 100%;
     height: 100%;
 }
-.insta_wrapper p{
+.insta_wrapper a{
+    display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    padding-top: 20px;
+    margin-top: 20px;
     color: #999999;
 }
 .line{
